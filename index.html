@@ -60,6 +60,10 @@
           <!-- <a href="sms://+19545139568"><span class="navbar-brand fa fa-commenting fa-2x icon-bar" style="color: white" aria-hidden="true"></span></a> -->
           <a href="https://www.messenger.com/t/knight.brilliance"><span class="navbar-brand fa fa-commenting fa-2x icon-bar" style="color: white" aria-hidden="true"></span></a>
           <!-- <a href="mailto:idelfonsog2@gmail.com"><span class="navbar-brand fa fa-paper-plane fa-2x icon-bar" style="color: white" aria-hidden="true"></span></a> -->
+          <a class="btn btn-success navbar-btn" role="button" onclick="getTechSkLs()">Technical Skills</a>
+          <a class="btn btn-success navbar-btn" role="button" onclick="getProjectLs()">Projects</a>
+          <a class="btn btn-success navbar-btn" role="button" onclick="getExpLs()">Experience</a>
+          <a class="btn btn-success navbar-btn" role="button" onclick="getEduLs()">Education</a>
           <a class="btn btn-success navbar-btn" href="Resume.pdf" role="button">Download CV »</a>
         </div>
       </div>
@@ -80,7 +84,7 @@
     </div>
     <div class="container">
       <div class="page-header">
-        <h1><code>Technical Skills</code></h1>
+        <h1 id="tech-sk ls"><code>Technical Skills</code></h1>
       </div>
       <div class="row">
         <p>*Scrum two-day session training provided by 3CInteractive</p>
@@ -119,20 +123,9 @@
               </div>
       </div>
     </div>
-    <div class="container">
+    <div id="projects ls" class="container">
       <div class="page-header">
-        <h1><code>Experience</code></h1>
-        <!-- Solstice -->
-        <p class="lead"><strong>Technician <a href="http://Proendoscopy.com/">Proendoscopy </a></strong>Current</p>
-        <ul style="font-size:18px">
-          <li>Increase repair outputs by 50% on high level equipment repairs.</li>
-          <li>Maintain and repair all surgery equipment, from different sorts of surgery scopes to digital and analog OR systems</li>
-          <li>Manage a team of four technicians.</li>
-        </ul>
-    </div>
-    <div class="container">
-      <div class="page-header">
-        <h1><code>Projects</code></h1>
+        <h1 ><code>Projects</code></h1>
       </div>
       <div class="row">
         <div class="col-md-4">
@@ -195,9 +188,19 @@
           </div>
         </div>
       </div>
-
+    <div id="exp ls" class="container">
+      <div class="page-header">
+        <h1 ><code>Experience</code></h1>
+        <!-- Solstice -->
+        <p class="lead"><strong>Technician <a href="http://Proendoscopy.com/">Proendoscopy </a></strong>Current</p>
+        <ul style="font-size:18px">
+          <li>Increase repair outputs by 50% on high level equipment repairs.</li>
+          <li>Maintain and repair all surgery equipment, from different sorts of surgery scopes to digital and analog OR systems</li>
+          <li>Manage a team of four technicians.</li>
+        </ul>
+    </div>
     <!-- Education Container -->
-    <div class="container">
+    <div id="edu ls" class="container">
       <div class="page-header">
         <h1><code>Education</code></h1>
       </div>
@@ -228,6 +231,22 @@ $('#unity').css({
     'background-image': 'none',
     'background-color': '#ab69a1'
 });
+function getTechSkLs() {
+    var elmnt = document.getElementById("tech-sk ls");
+    elmnt.scrollIntoView();
+};
+function getProjectLs() {
+    var elmnt = document.getElementById("projects ls");
+    elmnt.scrollIntoView();
+};
+function getExpLs() {
+    var elmnt = document.getElementById("exp ls");
+    elmnt.scrollIntoView();
+};
+function getEduLs() {
+    var elmnt = document.getElementById("edu ls");
+    elmnt.scrollIntoView();
+};
 </script>
   </body>
 </html>
