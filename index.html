@@ -1,260 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- <link rel="icon" href="../../favicon.ico"> -->
-    <!-- Fonts ang glyphicons were used from http://fontawesome.io/examples/ -->
-    <script src="https://use.fontawesome.com/6a7a785e22.js"></script>
-    <title>Alonso José Gutiérrez Morán</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<head>
 
-    <!-- Skype -->
-    <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+  <title>Resume - Start Bootstrap Theme</title>
 
-    <!-- Custom styles for this template -->
-    <!-- <link href="jumbotron.css" rel="stylesheet"> -->
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 
-    <!-- Latest compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+<body id="page-top">
 
-    <!-- Optional theme -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
-
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
-  </head>
-
-  <body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="https://www.linkedin.com/in/alonso-gutierrez-b7a8a9154/"><span class="navbar-brand fa fa-linkedin fa-2x icon-bar" style="color: white" aria-hidden="true"></span></a>
-          <a href="https://www.github.com/alonsojg"><span class="navbar-brand fa fa-github fa-2x icon-bar" style="color: white" aria-hidden="true"></span></a>
-          <!-- <a href="https://www.twitter.com/idelfonsogm"><span class="navbar-brand fa fa-twitter fa-2x icon-bar" style="color: white" aria-hidden="true"></span></a> -->
-          <!-- <a href="sms://+19545139568"><span class="navbar-brand fa fa-commenting fa-2x icon-bar" style="color: white" aria-hidden="true"></span></a> -->
-          <a href="https://www.messenger.com/t/knight.brilliance"><span class="navbar-brand fa fa-commenting fa-2x icon-bar" style="color: white" aria-hidden="true"></span></a>
-          <!-- <a href="mailto:idelfonsog2@gmail.com"><span class="navbar-brand fa fa-paper-plane fa-2x icon-bar" style="color: white" aria-hidden="true"></span></a> -->
-          <a class="btn btn-success navbar-btn" role="button" onclick="getTechSkLs()">Technical Skills</a>
-          <a class="btn btn-success navbar-btn" role="button" onclick="getProjectLs()">Projects</a>
-          <a class="btn btn-success navbar-btn" role="button" onclick="getExpLs()">Experience</a>
-          <a class="btn btn-success navbar-btn" role="button" onclick="getEduLs()">Education</a>
-          <a class="btn btn-success navbar-btn" href="Resume.pdf" role="button">Download CV »</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-
-    <div class="jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-10">
-            <p class="lead" style="font-size:42px;font-weight">Alonso José Gutiérrez Morán</p>
-            <p class="lead" style="font-size:36px">Data Analyst</p>
-            <p class="lead" style="font-size:24px"><span class="fa fa-envelope-o"></span> <a href="mailto:alonsogutierrez94@gmail.com">alonsogutierrez94@gmail.com</a></p>
-            <p class="lead" style="font-size:24px"><span class="fa fa-phone"></span> <a href="tel://+19545139734">+1 954 513 9734</a></p>
-          </div>
-      	</div>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Clarence Taylor</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+        </li> -->
+      </ul>
     </div>
-    <div class="container" id="tech-sk ls">
-      <div class="page-header">
-        <h1><code>Technical Skills</code></h1>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Alonso
+          <span class="text-primary">Gutierrez</span>
+        </h1>
+        <div class="subheading mb-5">Orlando, FL 32771· (954) 513-734 ·
+          <a href="mailto:alonsogutierrez94@gmail.com">alonsogutierrez94@gmail.com</a>
+        </div>
+        <p class="lead mb-5">I am experienced with data wrangling techniques ranging from acquisition, processing, visualization and interpretation. Information storytelling better communicates multifaceted ideas present in today's data abundant world.</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/alonso-gutierrez/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.github.com/alonsojg">
+            <i class="fab fa-github"></i>
+          </a><a href="Resume.pdf">
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
       </div>
-      <div class="row">
-        <p>*Scrum two-day session training provided by 3CInteractive</p>
-        <div class="col-md-4">
-          <h4 style="font-weight:bold">Programming/Markdown Languages</h4>
-          <ul style="font-size:18px">
-            <li>Python</li>
-            <li>R</li>
-            <li>Sqlite</li>
-            <li>NoSQL</li>
-            <li>JavaScript</li>
-            <li>JSON/XML</li>
-            <li>HTML/CSS</li>
-          </ul>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        
+        <h2 class="mb-5">Project and Work Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"><a href="https://github.com/alonsojg/Wrangle-OpenStreetMap-Data"> Wrangle OpenStreetMap Data</a></h3>
+             <p>Python, Sqlite and XML | Cleaning and processing of OSM data into MySql Database. Use of data auditing techniques to uncover mistakes in the data, such as XML tree parsing and Regex analysis.</p></div>
+            
+          <div class="resume-date text-md-right">
+            <span class="text-primary">March 2017</span>
           </div>
-          <div class="col-md-4">
-            <h4 style="font-weight:bold">Frameworks/Libraries</h4>
-            <ul style="font-size:18px">
-              <li>Pandas</li>
-              <li>Numpy</li>
-              <li>SKlearn</li>
-              <li>Zipline</li>
-              <li>d3.js</li>
-              <li>dimple.js</li>
-            </ul>
-            </div>
-            <div class="col-md-4">
-              <h4 style="font-weight:bold">Other</h4>
-              <ul style="font-size:18px">
-                <li>RStudio</li>
-                <li>Git/Github</li>
-                <li>Jupyter Notebook</li>
-                <li>Quantopian</li>
-                <li>MongoDB</li>
-              </ul>
-              </div>
-      </div>
-    </div>
-    <div id="projects ls" class="container">
-      <div class="page-header">
-        <h1 ><code>Projects</code></h1>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <h2 class="featurette-heading">Wrangle OpenStreetMap Data</h2>
-          <p></p>
-          <p class="lead" style="font-size:24px">Python, Sqlite and XML <a class="btn btn btn-default btn-xs" href="https://github.com/alonsojg/Wrangle-OpenStreetMap-Data" role="button">Link</a></p>
-          <div style="font-size:16px">
-            <p>Cleaning and processing of OSM data into MySql Database.</p>
-            <p>Use of data auditing techniques to uncover mistakes in the data, such as XML tree parsing and Regex analysis.</p>
+        </div><div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"><a href="https://github.com/alonsojg/Identify-Fraud-from-Enron-Email">ML-Language Processing Enron Debacle Data</a></h3>
+              <p>Python | Interpreting of the Enron scandal based on the companies' email data dumps publicized after the commercial-titan’s fall. Utilizing Python 2.7’s natural language toolkit (nltk) module, along with tf-idf technique for vocabulary preprocessing. Enhanced search ML-classifier algorithms for machine learning, along with primary component analysis, stratified data shuffling, grid-searching and score-based model-selection.</p></div>
+            
+          <div class="resume-date text-md-right">
+            <span class="text-primary">May 2017</span>
+          </div>
+        </div><div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"><a href="https://github.com/alonsojg/Data_Analysis_with_R">Analysis with R and Rstudio</a></h3>
+			  <p>R and RStudio | Auditing and cleaning of bank loan data for exploratory purposes in loan fraud. Use of R and RStudio for descriptive visualizations and simple statistics of this data’s features.</p></div>
+            
+          <div class="resume-date text-md-right">
+            <span class="text-primary">May 2017</span>
+          </div>
+        </div><div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"><a href="https://github.com/alonsojg/Visualizing_Gene_Expression">Visualizing Gene Expression</a></h3>
+			  <p>Python, d3.js, statical analysis | Using genomic microarray-testing in order to identify genetic markers in the disntinction between two common subtypes of Leukemia. Use of Machine Learning techniques such as PCA analysis and Data Scaling for the extraction of information from raw data.</p></div>
+            
+          <div class="resume-date text-md-right">
+            <span class="text-primary">June 2017</span>
+          </div>
+        </div><div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"><a href="https://github.com/alonsojg/Investigating_the_Titanic_Disaster">Investigating the Titanic Disaster</a></h3>
+			  <p>Jupyter Notebook, Python, Pandas, Numpy | Using Jupyter Notebooks to investigate the Titanic Disaster. The data is used to find some of the common characteristics amongst survivors. Pandas and Numpy modules were employed to process the data. Matplotlib and Seaborn modules were employed to illustrate information extracted.</p></div>
+            
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2017</span>
+          </div>
+        </div><div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"><a href="#">Stock Value Predictions with Machine Learning</a></h3>
+			  <p>Python, Machine Learning techniques, Statical analysis | Using HTML-based pandas API requests to gather daily stock value data from Yahoo. Analyzing securities with statistics and optimized machine learning algorithms in order to predict future values using Python, Pandas and Numpy.</p></div>
+            
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Ongoing</span>
+          </div>
+        </div><div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Data Analyst Freelancer</h3>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">March 2018 - Present</span>
           </div>
         </div>
-        <div class="col-md-4">
-          <h2 class="featurette-heading">Identify Fraud from Enron Emails<span class="text-muted"> </span></h2>
-          <p></p>
-          <p class="lead" style="font-size:24px">Python <a class="btn btn btn-default btn-xs" href="https://github.com/alonsojg/Identify-Fraud-from-Enron-Email" role="button">Repo</a></p>
-          <div style="font-size:16px">
-            <p>Interpreting of the Enron scandal based on the companies' email data dumps publicized after the commercial-titan’s fall.</p>
-            <p>Utilizing Python 2.7’s natural language toolkit (nltk) module, along with tf-idf technique for vocabulary preprocessing.</p>
-            <p>Enhanced search ML-classifier algorithms for machine learning, along with primary component analysis, stratified data shuffling, grid-searching and score-based model-selection.</p>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Surgery Scope Repair Technician</h3>
+           </div>
+            <div class="subheading mb-3">Proendoscopy, LLC., Sunrise FL, U.S.</div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">December 2015 - 2018</span>
           </div>
         </div>
-        <div class="col-md-4">
-          <h2 class="featurette-heading">Data Analysis with R and RStudio</h2>
-            <p></p>
-            <p class="lead" style="font-size:24px">R and RStudio <a class="btn btn btn-default btn-xs" href="https://github.com/alonsojg/Data_Analysis_with_R" role="button"> Repo</a><a class="btn btn btn-default btn-xs" href="https://www.ajgm.me/Data_Analysis_with_R/" role="button"> Report</a></p>
-          <div style="font-size:16px">
-            <p>Auditing and cleaning of bank loan data for exploratory purposes in loan fraud.</p>
-            <p>Use of R and RStudio for descriptive visualizations and simple statistics of this data’s features.</p>
-          </div>
-        </div>
+
+      
+
       </div>
 
-      <div class="row">
-        <div class="col-md-4">
-          <h2 class="featurette-heading">Visualizing Gene Expression</h2>
-          <p></p>
-          <p class="lead" style="font-size:24px">Python, d3.js, statical analysis <a class="btn btn btn-default btn-xs" href="https://github.com/alonsojg/Visualizing_Gene_Expression" role="button">Repo</a></p>
-          <div style="font-size:16px">
-            <p>Using genomic microarray-testing in order to identify genetic markers in the disntinction between two common subtypes of Leukemia.</p>
-            <p>Use of Machine Learning techniques such as PCA analysis and Data Scaling for the extraction of information from raw data.</p>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">University of Central Florida</h3>
+            <div class="subheading mb-3">Bachelor of Science</div>
+            <div>Mathematics - Physics and Engineering Track</div>
+            <p>GPA: 3.23</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">January 2019 - May 2021 (Ongoing)</span>
           </div>
         </div>
-        <div class="col-md-4">
-          <h2 class="featurette-heading">Investigating the Titanic Disaster</h2>
-          <p></p>
-          <p class="lead" style="font-size:24px">Jupyter Notebook, Python, Pandas, Numpy <a class="btn btn btn-default btn-xs" href="" role="button">Link</a></p>
-          <div style="font-size:16px">
-            <p>Using Jupyter Notebooks to investigate the Titanic Disaster. The data is used to find some of the common characteristics amongst survivors.</p>
-            <p>Pandas and Numpy modules were employed to process the data.</p>
-            <p>Matplotlib and Seaborn modules were employed to illustrate information extracted.</p>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0" href="https://www.udacity.com">Udacity</h3>
+            <div class="subheading mb-3">Data Analyst Nanodegree</div>
           </div>
-       </div>
-        <div class="col-md-4">
-          <h2 class="featurette-heading">Stock Value Predictions with Machine Learning</h2>
-          <p></p>
-          <p class="lead" style="font-size:24px">Python, Machine Learning techniques, Statical analysis <a class="btn btn btn-default btn-xs" role="button">Ongoing</a></p>
-          <div style="font-size:16px">
-            <p>Using HTML-based pandas API requests to gather daily stock value data from Yahoo.</p>
-            <p>Analyzing securities with statistics and optimized machine learning algorithms in order to predict future values using Python, Pandas and Numpy.</p>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">June 2017 - December 2017</span>
           </div>
         </div>
-      </div>
-    <div id="exp ls" class="container">
-      <div class="page-header">
-        <h1 ><code>Work Experience</code></h1>
-        <!-- Solstice -->
-        <p class="lead"><strong>Freelance Data Analyst</strong> | Current</p>
-        <p class="lead"><strong>Technician <a href="http://Proendoscopy.com/">Proendoscopy </a></strong> | Proendoscopy, LLC., Sunrise FL, U.S. | December 2015-2018</p>
-        <!-- <ul style="font-size:18px">
-          <li>Increase repair outputs by 50% on high level equipment repairs.</li>
-          <li>Maintain and repair all surgery equipment, from different sorts of surgery scopes to digital and analog OR systems</li>
-          <li>Manage a team of four technicians.</li>
-        </ul> -->
-    </div>
-    <!-- Education Container -->
-    <div id="edu ls" class="container">
-      <div class="page-header">
-        <h1><code>Education</code></h1>
-      </div>
-      <p class="lead">Data Analyst Nanodegree <a href="http://www.udacity.com">Udacity</a> June 2017 - December 2017</p>
-      <p class="lead">Bachelor’s in Mathematics at UCF</a> | August 2019 – 2021 (ongoing)</p>
-      <p class="lead">Associates in Arts at FIU</a> | August 2012 – 2014</p>
-    </div>
-      <hr>
-      <footer>
-        <p><span class="fa fa-terminal fa-lg"></span> 2018 Company, Inc.</p>
-      </footer>
-    </div> <!-- /container -->
 
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Florida International University</h3>
+            <div class="subheading mb-3">Associate in Arts</div>
+            <p>GPA: 3.4</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2012 – 2014</span>
+          </div>
+        </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-	<script>
-	$('#csharp').css({
-	    'background-image': 'none',
-	    'background-color': '#178600'
-	});
-	$('#unity').css({
-	    'background-image': 'none',
-	    'background-color': '#ab69a1'
-	});
-	function getTechSkLs() {
-	    var elmnt = document.getElementById("tech-sk ls");
-	    elmnt.scrollIntoView();
-	};
-	function getProjectLs() {
-	    var elmnt = document.getElementById("projects ls");
-	    elmnt.scrollIntoView();
-	};
-	function getExpLs() {
-	    var elmnt = document.getElementById("exp ls");
-	    elmnt.scrollIntoView();
-	};
-	function getEduLs() {
-	    var elmnt = document.getElementById("edu ls");
-	    elmnt.scrollIntoView();
-	};
-	</script>
-	<style type="text/css">
-	 	div.jumbotron { 
-			padding-top: 100px;  
-		}
-	</style>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Skills</h2>
+
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-python"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-r-project"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-js-square"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fas fa-database"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-linux"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-git-alt"></i>
+          </li>
+        </ul>
+
+        <div class="subheading mb-3">Others</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Sqlite</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            NoSQL</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Python's Pandas</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Python's Numpy</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Python's SKlearn</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Python's Zipline</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            d3.js</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            dimple.js</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Jupyter Notebook</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Quantopian</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            MongoDB</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Interests</h2>
+        <p>Apart from being a data analyst, I enjoy most of my time being outdoors. I am a novice Brazilian Jiu Jitsu martial artist, and really enjoy road biking.</p>
+        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows. I also spend a large amount of my free time exploring the latest technology advancements in artificial intelligence, mathematics and quantum technology.</p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <!-- <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5">Awards &amp; Certifications</h2>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Google Analytics Certified Developer</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Mobile Web Specialist - Google Certification</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            2<sup>nd</sup>
+            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - James Buchanan High School - Hackathon 2006</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            3<sup>rd</sup>
+            Place - James Buchanan High School - Hackathon 2005</li>
+        </ul>
+      </div>
+     --></section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
 </body>
+
 </html>
